@@ -22,7 +22,7 @@ public class CreditCardPayment {
 	private static PaymentGateway creditcardPaymentGateway;
 
     public static void main(String[] args) {    	
-        System.out.println("Product Charity School (Credit Card Test)");
+        System.out.println("Product Charity with Credit Card Payment)");
 
         // Create a PaymentGateway Credit Card instance.
         // Parameters: id, dateStamp, initial paymentStatus, amount, cardNumber.
