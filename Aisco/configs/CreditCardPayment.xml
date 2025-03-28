@@ -8,7 +8,7 @@
 	<feature automatic="selected" name="Income"/>
 	<feature manual="selected" name="Expense"/>
 	<feature automatic="selected" name="Donation"/>
-	<feature name="DirectPayment"/>
-	<feature manual="selected" name="PaymentGateway"/>
-	<feature name="CreditCard"/>
+	<feature manual="selected" name="DirectPayment"/>
+	<feature automatic="selected" name="PaymentGateway"/>
+	<feature manual="selected" name="CreditCard"/>
 </configuration>

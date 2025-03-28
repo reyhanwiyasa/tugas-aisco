@@ -4,13 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PaymentGatewayImpl implements PaymentGateway {
-    // Basic fields common to all payment gateways
     protected String id;
     protected String dateStamp;
     protected String paymentStatus;
     protected long amount;
-    
-    // List to hold transaction information
     protected List<String> transactionList = new ArrayList<>();
 
     public PaymentGatewayImpl() {
@@ -25,35 +22,28 @@ public class PaymentGatewayImpl implements PaymentGateway {
 
     @Override
     public void printHeader() {
-        System.out.println("=== Payment Gateway ===");
+        System.out.println("PAYMENT GATEWAY");
     }
 
     @Override
     public void validatePaymentDetails() {
-        System.out.println("Validating payment details...");
+        System.out.println("Validating");
     }
 
     @Override
     public long setFee() {
-        // Default fee is 0; specialized modules can override this.
         return 0;
     }
 
     @Override
     public void addTransaction() {
-        String transactionInfo = "Transaction ID: " + id
-            + " | Date: " + dateStamp
-            + " | PaymentStatus: " + paymentStatus
-            + " | Amount: " + amount
-            + " | Fee: " + setFee();
-        transactionList.add(transactionInfo);
-        System.out.println("Transaction added successfully.");
+        System.out.println("Transaction added");
     }
 
     @Override
     public void getTransaction() {
         if (transactionList.isEmpty()) {
-            System.out.println("No transactions available.");
+            System.out.println("No transactions");
         } else {
             for (String transaction : transactionList) {
                 System.out.println(transaction);

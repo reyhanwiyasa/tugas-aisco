@@ -3,5 +3,7 @@ package aisco.paymentgateway.core;
 public interface PaymentGateway {
     void printHeader();
     void validatePaymentDetails();
-    long setFee();
+    void addTransaction();
+    void getTransaction();
+    void setFee();
 }

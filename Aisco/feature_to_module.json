@@ -7,5 +7,6 @@
   "Expense": ["aisco.financialreport.expense"],
   "Donation": ["aisco.donation.core"],
   "DirectPayment": ["aisco.donation.core"],
-  "PaymentGateway": ["aisco.paymentgateway.core"]
+  "PaymentGateway": ["aisco.donation.pgateway"],
+  "CreditCard": ["aisco.paymentgateway.core", "aisco.paymentgateway.creditcard"]
 }
